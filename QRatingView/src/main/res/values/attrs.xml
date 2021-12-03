@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name填我们刚才新建的View名称-->
+    <declare-styleable name="QRatingView">
+        <!-- 未选中图片 -->
+        <attr name="normalIcon" format="reference"/>
+        <!-- 选中图片 -->
+        <attr name="selectedIcon" format="reference"/>
+        <!-- 自定义评分数量 -->
+        <attr name="totalCount" format="integer"/>
+        <!-- 选中的个数 -->
+        <attr name="selectedCount" format="integer"/>
+        <!-- 图案的间隙 -->
+        <attr name="gap" format="dimension"/>
+        <!-- 图案的大小 -->
+        <attr name="iconSize" format="dimension"/>
+        <attr name="available" format="boolean"/>
+
+    </declare-styleable>
+</resources>

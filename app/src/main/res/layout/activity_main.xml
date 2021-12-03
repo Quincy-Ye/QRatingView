@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  只展示，无交互（例如：查看历史评价记录）"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.yeqingqing.qratingview.QRatingView
+        android:id="@+id/qrv_main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:available="false"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_tv_title"
+        app:selectedCount="3"
+        app:totalCount="5" />
+
+    <com.yeqingqing.qratingview.QRatingView
+        android:id="@+id/qrv_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qrv_main1"
+        app:totalCount="5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_tv_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="  评价操作"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qrv_main2" />
+
+    <com.yeqingqing.qratingview.QRatingView
+        android:id="@+id/qrv_main3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_tv_title2"
+        app:totalCount="5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_tv_commence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/qrv_main3"
+        app:layout_constraintStart_toEndOf="@id/qrv_main3"
+        app:layout_constraintTop_toTopOf="@id/qrv_main3" />
+
+    <com.yeqingqing.qratingview.QRatingView
+        android:id="@+id/qrv_main4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qrv_main3"
+        app:totalCount="5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_tv_commence2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/qrv_main4"
+        app:layout_constraintStart_toEndOf="@id/qrv_main4"
+        app:layout_constraintTop_toTopOf="@id/qrv_main4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
